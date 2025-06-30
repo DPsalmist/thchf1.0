@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Transformation Haven Foundation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+     <style>
+         .responsive-logo img{
+            height: 6rem;
+            width: auto;
+         }
+         .responsive-text{
+            text-wrap: wrap;
+         }
+
+        
+        .video-container {
+    position: relative;
+    padding-top: 120%; /* 6:19 ratio (6 / 19 * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 110%; /* Increase width to cover black space */
+    margin-left: -5%; /* Shift left to center and cover black space */
+  }
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container area without black bars */
+  }
+
+
+  .cropped-image {
+  width: 300px;           /* Set the width of the image */
+  height: 750px;          /* Set the height of the image */
+  object-fit: cover;      /* Ensures the image covers the container */
+  object-position: center top; /* Moves the image upward so the bottom is cropped */
+  display: inline-block;  /* Makes the image an inline-block element */
+}
+
+@media (max-width: 576px) {
+  .responsive-text {
+    font-size: 1rem;
+    /* background-color: green; */
+    padding-right: 30px;
+    /* display: none; */
+  }
+  .responsive-logo{
+    /* background-color: red; */
+    width: 10%;
+    font-size: 8px;
+    justify-content: space-around;
+    margin-right: 100px;
+    padding-right: 20px;
+  }
+  .responsive-logo img{
+    /* background-color: green; */
+    height: 4rem;
+  }
+}
+
+.team-item img {
+  height: 300px; /* or whatever height you prefer */
+  width: 100%;
+  object-fit: cover;
+  object-position: top; /* optional: aligns face/head at top */
+  border-radius: 8px;
+}
+
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar Start -->
+  <!-- <div  class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+            <small><i class="fa fa-map-marker-alt me-2"></i>Methodist shopping complex, NTA road, Agodi gate, Ibadan, Oyo State Nigeria</small>
+            <small class="ms-4"><i class="fa fa-envelope me-2"></i> THCHFoundation@gmail.com</small>
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+            <small>Follow us:</small>
+            <a class="text-white-50 ms-3" href="https://www.facebook.com/share/12JciVgQZa4/"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-white-50 ms-3" href="https://x.com/haven72794"><i class="fab fa-twitter"></i></a>
+            <a class="text-white-50 ms-3" href="https://tiktok.com/@thch_foundation?_t=ZN-8uok5h3tcTW"><i class='bx bxl-tiktok'></i></a>
+            <a class="text-white-50 ms-3" href="https://www.instagram.com/thchfoundation?igsh=MTNyMTVpcDNvMGdlaQ=="><i class="fab fa-instagram"></i></a>
+        </div>
+    </div> -->
+
+   <!-- Navbar Start -->
+<nav id="nav" class="navbar navbar-expand-lg navbar-dark py-2 px-lg-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-between g-3 responsive-logo">
+            <img src="img/WhatsApp_Image_2025-03-21_at_23.10.12-removebg-preview.png" alt="Logo" >
+            <div class=" responsive-text" >
+                <span class="text-primary">Transformation Haven</span><br>
+                <span class="text-white d-block">Caring Hearts Foundation</span>
+            </div>
+            <!-- <span>THCHFoundation</span> -->
+        </a>
+
+        <!-- Toggler button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                        <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="project.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Donate button -->
+            <a class="btn btn-outline-primary d-flex align-items-center mt-3 mt-lg-0 ms-lg-3 px-3" href="donate.html">
+                <span>Donate Now</span>
+                <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="20000">
+                    <img class="w-100 cropped-image" src="New Images2 used/newpicture11.jpeg" alt="Image" width="940px" height="940px">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Let's Change The World With Humanity</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Together, we can change the world. By uniting our strengths and passions.</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="donate.html">
+                                        Donate Now
+                                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="15000">
+                    <img class="w-100 cropped-image" src="New Images2 used/newpicture9.jpeg" alt="Image" width="940px" height="940px">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Let's Save More Lifes With Our Helping Hand</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Let’s save more lives by extending a helping hand. Every act of kindness can make a world of difference. </p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
+                                        Donate Now
+                                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video introduction Start -->
+
+
+    <div class="container mt-5">
+        <div class="card">
+          <div class="row no-gutters p-5">
+            <!-- Video Section with 6:19 ratio -->
+            <div class="col-md-6 rounded-lg">
+              <div class="video-container">
+                <video 
+                  src="https://res.cloudinary.com/dzxnc7oda/video/upload/v1751272318/edited_size.mp4" 
+                  controls 
+                  autoplay 
+                  muted 
+                  playsinline 
+                  class="w-100 rounded"
+                ></video>
+              </div>
+            </div>
+
+            <!-- Text Section -->
+            <div class="col-md-6 p-4 " style="margin-top: 5rem;">
+              <div class="md-d-flex d-lg-flex align-items-center justify-content-center g-4">
+                <div>
+                    <img src="img/Blue LOGO.png" style="height:10rem; width: auto;" alt="Logo" class="pl-4"  alt="">
+                </div>
+                <h5 class="card-title h1">
+                    Welcome to Transformation Haven Caring Hearts Foundation
+                </h5>
+              </div>
+              <p class="card-text fs-sm" style="font-size: 1.2rem;">
+                At Transformation Haven, we are dedicated to uplifting vulnerable individual and communities through education, empowerment, and compassionate care. We provide access to education to break the cycle of poverty, equip women and widows with skills and healthcare for self-reliance, and offer safe, nurturing environments for orphans and vulnerable children to grow and thrive.
+              </p>
+              <p class="card-text 5" style="font-size: 1.2rem;">
+                Join us in bringing hope and opportunity to those who need it most. Together, we can build brighter futures and lasting change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Video introduction End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-80 h-100 pt-5 pe-5" src="New Images2 used/newpicture5.jpeg" alt="" style="object-fit: cover;  margin-top: 30px;">
+                        <!-- <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="New Images2 used/RDM_003.jpeg" alt="" style="width: 200px; height: 200px; object-fit: cover;"> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <!-- <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">About Us</div> -->
+                        <h1 class="display-6 mb-5">OUR MISSION</h1>
+                        <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
+                            <p class="text-dark mb-2">To empower individuals and communities through the provision of education, support, transformative solutions,
+                                and partnerships with stakeholders to drive sustainable growth and positive change.</p>
+                            <span class="text-primary">-Our Mission</span>
+                        </div>
+                        <h1 class="display-6 mb-5">OUR VISION</h1>
+                        <p class="mb-5">A world where underprivileged and communities thrive through education, empowerment, and innovative solutions.
+                        </p>
+                        <!-- <a class="btn btn-primary py-2 px-3 me-3" href="https://web.facebook.com/profile.php?id=61567119178873">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a> -->
+                        <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
+                            Contact Us
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Causes Start -->
+    <div class="container-xxl bg-light my-5 py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Feature Causes</div>
+                <h1 class="display-6 mb-5">Every Child Deserves The Opportunity To Learn</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>Education</small>
+                            </div>
+                            <h5 class="mb-3">Education For African Children</h5>
+                            <p>
+                                Education is the key to breaking the cycle of poverty and building brighter futures. By providing children with access to quality education, we empower them to achieve their dreams and create lasting change in their communities. Together, we can open doors to opportunities and hope.</p>
+                            <!-- <div class="causes-progress bg-light p-3 pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
+                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid w-100 cropped-image" src="New Images2 used/RDM_00001.jpeg" style="height: 250px;" alt="">
+                            <!-- <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="">
+                                    Read More
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>Widows</small>
+                            </div>
+                            <h5 class="mb-3"> Helping the Widows</h5>
+                            <p>Widows often face unique challenges, including economic hardship and social isolation. Our NGO is dedicated to providing support, empowerment, and resources to help widows rebuild their lives, ensuring they have access to financial aid, counseling, and community support. Together, we can offer hope and opportunity for a brighter future.
+
+                            </p>
+                            <!-- <div class="causes-progress bg-light p-3 pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
+                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid w-100 cropped-image" src="New Images2 used/RDM_3986.jpg" style="height: 250px;" alt="">
+                            <!-- <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="">
+                                    Read More
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>Orphans & Vulnerables</small>
+                            </div>
+                            <h5 class="mb-3">Helping the Orphans & Vulnerables</h5>
+                            <p>Orphaned children deserve more than just survival — they deserve love, care, and the opportunity to thrive. With your support, we can provide them with education, emotional support, and a brighter future full of hope.</p>
+                            <!-- <div class="causes-progress bg-light p-3 pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark">$10,000 <small class="text-body">Goal</small></p>
+                                    <p class="text-dark">$9,542 <small class="text-body">Raised</small></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid w-100 cropped-image" src="New Images2 used/RDM_3645.jpg" style="height: 250px;" alt="">
+                            <!-- <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="">
+                                    Read More
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Causes End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">What We Do</div>
+                <h1 class="display-6 mb-5">Learn More What We Do And Get Involved</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
+                        <h4 class="mb-3">Education</h4>
+                        <p class="mb-4">By providing access to quality education, we empower children to break the cycle of poverty, develop critical skills, and unlock their full potential.</p>
+                        <a class="btn btn-outline-primary px-3" href="projectsHtml/education.html">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
+                        <h4 class="mb-3">Widows & Empowerment</h4>
+                        <p class="mb-4"> Empowerment means equipping vulnerable individuals—including widows—with the tools to rebuild their lives. Through skills training, financial support, and access to healthcare, we help them regain independence, support their families, and thrive with dignity.
+
+                        </p>
+                        <a class="btn btn-outline-primary px-3" href="projectsHtml/empow.html">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <img class="img-fluid mb-4" src="img/home-regular-96.png" alt="">
+                        <h4 class="mb-3">Orphans & Vulnerables</h4>
+                        <p class="mb-4">Orphans and vulnerable children deserve more than just survival—they deserve love, stability, and a chance to thrive. With your support, we can provide them with the care, education, and opportunities they need to build a brighter future.
+
+                        </p>
+                        <a class="btn btn-outline-primary px-3" href="projectsHtml/foodbank.html">
+                            Learn More
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+<!-- Donate Start -->
+<div class="container-fluid donate my-5 py-5" data-parallax="scroll" data-image-src="img">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+               <a href="donate.html">
+                <div class="d-inline-block rounded bg-secondary text-primary py-1 px-3 mb-3" style="font-size: 1.5rem;">Donate Now</div>
+               </a>
+                <h1 class="display-6 text-white mb-5">Thanks For The Results Achieved With You</h1>
+                <p class="text-white-50 mb-0">Your donation has the power to change lives. By contributing today, you help provide essential resources like education, healthcare, and clean water to those in need. Join us in making a lasting impact—every bit counts! Donate now and be part of the change.</p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s ">
+                <div class="h-100 bg-white rounded-lg">
+                   <div style="background-color: #fd7e14;" class="p-3">
+                    <h2 class="text-white" style="text-align: center;">Transformation haven caring hearts foundation</h2> 
+                   </div> 
+                   <div class="px-5 pb-5 pt-2" style="text-align:center">
+                        <h3 style="color: rgba(24, 10, 150, 0.8); text-align: center;">NAIRA TRANSFER</h3>
+                        <div style="text-align:center; color: #fd7e14; font-size: 1.2rem; font-weight: 500;"> 
+                            Naira Account: <span style="font-size: 2rem;">0126539703</span>
+                            <br><span class="text-dark fw-bold">WEMA BANK </span>
+                        </div>
+                        
+                        <h3 style="color: rgba(24, 10, 150, 0.8);" class="mt-4">FOREIGN TRANSFER</h3>
+                        <div style="text-align:center; color:#fd7e14; font-size: 1.2rem; font-weight: 500;">Dollar Account: <span style="font-size: 2rem;">0621883798</span>
+                                <br><span class="text-dark fw-bold">WEMA BANK </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Donate End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Team Members</div>
+                <h1 class="display-6 mb-5"> Meet the Leadership Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid team-item" src="New Images2 used/WhatsApp Image 2025-04-10 at 22.17.23_b4fc253e.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Omoditunu. O</h5>
+                            <p class="text-primary">Founder/CEO</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/WhatsApp Image 2025-03-17 at 06.46.35.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Akintunde .A</h5>
+                            <p class="text-primary"> President</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/WhatsApp Image 2025-02-13 at 09.28.29.jpeg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Adebiyi. A
+                            </h5>
+                            <p class="text-primary">Secretary</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/WhatsApp Image 2025-02-12 at 20.08.21.jpeg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Oyinkansola. A</h5>
+                            <p class="text-primary">Project Manager</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Testimonial</div>
+                <h1 class="display-6 mb-5">Trusted By Thousands Of People And Nonprofits</h1>
+            </div>
+            <!-- <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="New Images2 used/RDM_3594.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Being part of this community has shown me how small efforts can create huge impacts. </p>
+                        <h5 class="mb-1">Sarah Adeyemi</h5>
+                        <span class="fst-italic">Teacher</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="New Images2 used/RDM_3508.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>The work this NGO does is remarkable. From providing healthcare to the underserved to advocating for those without a voice.</p>
+                        <h5 class="mb-1">Mrs Blessing</h5>
+                        <span class="fst-italic">Mother</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="New Images2 used/RDM_3660.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Supporting this NGO has been a rewarding experience.</p>
+                        <h5 class="mb-1">Seun Akindola</h5>
+                        <span class="fst-italic">Entrepreneur</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+     <!-- Carousel -->
+<div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-touch="false">
+    <div class="carousel-inner">
+  
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="card mx-auto shadow-lg" style="max-width: 500px; border-radius: 20px; overflow: hidden;">
+          <div class="ratio ratio-16x9">
+            <video class="carousel-video" controls>
+                <source src="https://res.cloudinary.com/dzxnc7oda/video/upload/v1751238967/video1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Hope in Motion</h5>
+            <p class="card-text">Stories of love and care from the children.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="card mx-auto shadow-lg" style="max-width: 500px; border-radius: 20px; overflow: hidden;">
+          <div class="ratio ratio-16x9">
+            <video class="carousel-video" controls>
+                <source src="https://res.cloudinary.com/dzxnc7oda/video/upload/v1751239003/video5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">From the Heart</h5>
+            <p class="card-text">Grateful voices share their journeys of transformation and hope.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="card mx-auto shadow-lg" style="max-width: 500px; border-radius: 20px; overflow: hidden;">
+          <div class="ratio ratio-16x9">
+            <video class="carousel-video" controls>
+              <source src="https://res.cloudinary.com/dzxnc7oda/video/upload/v1751238993/video4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Voices of Hope</h5>
+            <p class="card-text">Hear heartfelt stories from those whose lives have been touched by our mission.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const carouselEl = document.getElementById('videoCarousel');
+      const videos = document.querySelectorAll('.carousel-video');
+  
+      // Bootstrap carousel instance
+      const bsCarousel = bootstrap.Carousel.getInstance(carouselEl) || new bootstrap.Carousel(carouselEl, {
+        interval: false,
+        ride: false,
+        pause: true,
+        wrap: false
+      });
+  
+      // Pause the carousel when any video starts playing
+      videos.forEach(video => {
+        video.addEventListener('play', () => {
+          bsCarousel.pause();
+        });
+      });
+  
+      // Pause all videos whenever the slide changes
+      carouselEl.addEventListener('slide.bs.carousel', () => {
+        videos.forEach(video => {
+          video.pause();
+        });
+      });
+    });
+  </script>
+  
+
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/White logo.png" alt="" width="auto" height="100rem">
+                    </div>
+                    <p class="text-center">Transformation Haven Caring Hearts Foundation is dedicated to transforming lives and communities by providing support, education, and empowerment to orphaned, underprivileged. </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href="https://x.com/haven72794"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href="https://www.facebook.com/share/12JciVgQZa4/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href="https://www.instagram.com/thchfoundation?igsh=MTNyMTVpcDNvMGdlaQ=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square me-0" href="https://tiktok.com/@thch_foundation?_t=ZN-8uok5h3tcTW"><i class='bx bxl-tiktok'></i></a>
+                        <a class="btn btn-square me-0" href="https://www.youtube.com/@TransformationHavenFoundation"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Haven House, Beside MTN Mast, anfani layout, Ibadan, Nigeria</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+234709643757</p>
+                    <p><i class="fa fa-envelope me-3"></i> THCHFoundation@gmail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <!-- <a class="btn btn-link" href="">Our Services</a> -->
+                    <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
+                    <a class="btn btn-link" href="donate.html">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Subscribe to our Newsletter</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="index.html">TransformationHavenCaringHearts Foundation 2025.</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+     
+    <script>
+        const introVideo = document.getElementById('introVideo');
+        introVideo.volume = 0.1; // 50% volume
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const introVideo = document.getElementById('introVideo');
+      
+          if (introVideo) {
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (!entry.isIntersecting && !introVideo.paused) {
+                  introVideo.pause();
+                }
+              });
+            }, {
+              threshold: 0.3 // Adjust this as needed
+            });
+      
+            observer.observe(introVideo);
+          }
+        });
+    </script>
+    
+      
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const carousel = document.querySelector('#videoCarousel');
+          const carouselInstance = bootstrap.Carousel.getOrCreateInstance(carousel);
+      
+          // Pause videos when the carousel is about to slide
+          carousel.addEventListener('slide.bs.carousel', function () {
+            const videos = carousel.querySelectorAll('video');
+            videos.forEach(video => {
+              video.pause();
+              video.currentTime = 0;
+            });
+          });
+      
+          // Optionally pause the carousel when a video starts playing
+          const videos = carousel.querySelectorAll('video');
+          videos.forEach(video => {
+            video.addEventListener('play', () => {
+              carouselInstance.pause();
+            });
+          });
+        });
+      </script>
+      
+</body>
+
+</html>
