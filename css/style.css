@@ -1,3 +1,27 @@
+/* Partneship */
+.partners-slider{
+    display:flex;
+    overflow-x:auto;
+    gap:40px;
+    scroll-behavior:smooth;
+    padding-bottom:10px;
+}
+
+.partners-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.partner-card{
+    min-width:260px;
+    flex:0 0 auto;
+}
+
+.partner-card img{
+    max-height:120px;
+    object-fit:contain;
+}
+
+
 *{
     margin: 0;
     padding: 0;
