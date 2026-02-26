@@ -1,5 +1,5 @@
 /* Partneship */
-.partners-slider{
+/*.partners-slider{
     display:flex;
     overflow-x:auto;
     gap:40px;
@@ -20,7 +20,7 @@
     max-height:120px;
     object-fit:contain;
 }
-
+*/
 
 *{
     margin: 0;

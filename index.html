@@ -35,35 +35,53 @@
      <style>
 
     /* partnerships */
-        .partners-slider{
-            overflow:hidden;
-            position:relative;
-            width:100%;
-        }
+/* partnerships */
+    .partners-slider{
+        overflow:hidden;
+        position:relative;
+        width:100%;
+    }
+
+    .partners-track{
+        display:flex;
+        gap:40px;
+        width:max-content;
+        animation: scrollPartners 30s linear infinite;
+    }
+
+    .partner-card{
+        text-align:center;
+        min-width:200px;
+    }
+
+    .partner-card img{
+        max-height:80px;
+        object-fit:contain;
+        margin-bottom:10px;
+    }
+
+    /* Animation */
+    @keyframes scrollPartners{
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+    }
+
+    /* 📱 MOBILE FIXES */
+    @media (max-width:768px){
 
         .partners-track{
-            display:flex;
-            gap:60px;
-            width:max-content;
-            animation: scrollPartners 25s linear infinite;
+            gap:10px;
+            animation: scrollPartners 20s linear infinite; /* slower on mobile */
         }
 
         .partner-card{
-            text-align:center;
-            min-width:220px;
+            min-width:40px;  /* smaller cards */
         }
 
         .partner-card img{
-            max-height:90px;
-            object-fit:contain;
-            margin-bottom:10px;
+            max-height:60px;
         }
-
-        /* Animation */
-        @keyframes scrollPartners{
-            from { transform: translateX(0); }
-            to   { transform: translateX(-50%); }
-        }
+    }
 
     /* end partnerships */
 
@@ -652,7 +670,7 @@
             <!-- ORIGINAL SET -->
             <div class="partner-card">
                 <img src="New Images2 used/partners/WhatsApp Image 2025-04-07 at 22.29.30_ee3da9fd.jpg">
-                <p>Rocket Grassroot Sports Foundation</p>
+                <p>RSTF</p>
             </div>
 
             <div class="partner-card">
@@ -662,16 +680,12 @@
 
             <div class="partner-card">
                 <img src="New Images2 used/partners/cadtech_engr.jpeg">
-                <p>Cadtech Engineering</p>
+                <p>Cadtech Engr.</p>
             </div>
 
             
             <!-- DUPLICATE SET (required for infinite loop) -->
-            <div class="partner-card">
-                <img src="New Images2 used/partners/WhatsApp Image 2025-04-07 at 22.29.30_ee3da9fd.jpg">
-                <p>Rocket Grassroot Sports Foundation</p>
-            </div>
-
+         
             <div class="partner-card">
                 <img src="New Images2 used/partners/lions_club.jpeg">
                 <p>Lions Club</p>
