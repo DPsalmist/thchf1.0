@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empowerment</title>
+    <title>Empowerment Initiative</title>
 
      
      <!-- Favicon -->
@@ -29,6 +29,24 @@
      <!-- Template Stylesheet -->
      <link href="../css/style.css" rel="stylesheet">
      <style>
+        .year-card{
+            cursor:pointer;
+            transition:all 0.3s ease;
+            }
+
+        .year-card:hover{
+            transform:translateY(-6px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-gallery img{
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            }
+
+            .project-gallery img:hover{
+                transform: scale(1.05);
+                box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
         .img-card {
           border-radius: 8px;
           overflow: hidden;
@@ -199,7 +217,7 @@
     <!-- back to project -->
     <div class="p-4 m-3">
         <a href="../project.html" class="btn btn-outline-dark">
-          <i class="bi bi-arrow-left"></i> Back to Project
+          <i class="bi bi-arrow-left"></i> Back to Project List
         </a>
       </div>
       
@@ -209,12 +227,13 @@
             <div class="row align-items-center my-2">
               <!-- Image Section -->
               <div class="col-md-6">
-                <img src="../New Images2 used/Empowerment/RDM_3801.jpg" class="img-fluid" alt="Responsive Image">
+                <img src="../New Images2 used/Empowerment/emp1.6.jpeg" style="height:360px; width:80%;" class="img-fluid" alt="Responsive Image">
               </div>
         
               <!-- Text Section -->
               <div class="col-md-6">
-                <h1>EMPOWERMENT</h1>
+                <h1>EMPOWERMENT</h1> <hr>
+
                 <h4>
                     Empowering Entrepreneurs for Success
                 </h4>
@@ -248,7 +267,84 @@
                   </div> -->
     </section>
 
+        <!-- Initiatives by Year -->
+    <section class="container my-5">
 
+        <h3 class="text-center mb-4">Empowerment Impact by Year</h3>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2026Modal">
+                <div class="card-body">
+                <h2>2026</h2>
+                <p>Community Outreach - Upcoming</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2025Modal">
+                <div class="card-body">
+                <h2>2025</h2>
+                <p>Love in Action 2.0</p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+            <!-- Year Gallery -->
+    <!-- 2025 -->
+    <div class="modal fade project-gallery" id="food2025Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2025 - Love in Action 2.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Empowerment/emp1.0.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Empowerment/emp1.1.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Empowerment/emp1.2.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Empowerment/emp1.3.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Empowerment/emp1.4.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Empowerment/emp1.5.jpeg" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+<!-- 
    <section class="py-5 bg-light">
   <div class="container text-center">
     <h2 class="mb-3">Watch Our Story</h2>
@@ -256,11 +352,11 @@
     <p class="fw-semibold text-primary mb-3">🎬 Please press play to watch the video</p>
     
     <div class="ratio ratio-16x9">
-     <!--  <iframe 
+      <iframe 
         src="https://res.cloudinary.com/dzxnc7oda/video/upload/v1751238993/video4.mp4" 
         title="YouTube video"
         allowfullscreen
-      ></iframe> -->
+      ></iframe> 
 
       <iframe
   src="https://player.cloudinary.com/embed/?cloud_name=dzxnc7oda&public_id=video5&profile=cld-default"
@@ -274,7 +370,7 @@
     </div>
   </div>
 </section>
-
+ -->
 
 
 
@@ -284,7 +380,8 @@
             <div class="row align-items-center my-2">
               <!-- Image Section -->
               <div class="col-md-6">
-                <img src="../New Images2 used/Visitation/WhatsApp Image 2025-05-25 at 16.41.31_94625cc2.jpg" class="img-fluid" alt="Responsive Image">
+                <!-- <img src="../New Images2 used/Visitation/WhatsApp Image 2025-05-25 at 16.41.31_94625cc2.jpg" class="img-fluid" alt="Responsive Image"> -->
+                <img src="../New Images2 used/Empowerment/emp1.8.jpeg" style="height:360px; width: 80%;" class="img-fluid" alt="Responsive Image">
               </div>
         
               <!-- Text Section -->

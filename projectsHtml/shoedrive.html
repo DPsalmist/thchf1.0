@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Drive</title>
+    <title>Shoe Drive Initiative</title>
 
     
      <!-- Favicon -->
@@ -30,6 +30,25 @@
      <link href="../css/style.css" rel="stylesheet">
 
      <style>
+        .year-card{
+            cursor:pointer;
+            transition:all 0.3s ease;
+            }
+
+        .year-card:hover{
+            transform:translateY(-6px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-gallery img{
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            }
+
+            .project-gallery img:hover{
+                transform: scale(1.05);
+                box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
         .img-card {
           border-radius: 8px;
           overflow: hidden;
@@ -183,7 +202,7 @@
     <!-- back to project -->
     <div class="p-4 m-3 ">
         <a href="../project.html" class="btn btn-outline-dark">
-          <i class="bi bi-arrow-left"></i> Back to Project
+          <i class="bi bi-arrow-left"></i> Back to Project List
         </a>
       </div>
       
@@ -198,7 +217,7 @@
         
               <!-- Text Section -->
               <div class="col-md-6">
-                <h1>SHOE DRIVE</h1>
+                <h1>Shoe Drive Initiative</h1> <hr>
                 <h4>
                     Shoe Drive for Orphans and Vulnerable Children
                 </h4>
@@ -213,7 +232,7 @@
               </div>
             </div>
           </div>
-    </section>
+    </section> <hr>
 
     <!-- <section class="py-4">
         <div class="container">
@@ -222,6 +241,137 @@
         </div>
       </section> -->
 
+    <!-- Initiatives by Year -->
+    <section class="container my-5">
+
+        <h3 class="text-center mb-4">Shoe Drive Impact by Year</h3>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2026Modal">
+                <div class="card-body">
+                <h2>2026</h2>
+                <p>Community Outreach - Upcoming</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2025Modal">
+                <div class="card-body">
+                <h2>2025</h2>
+                <p>Love in Action 2.0</p>
+                </div>
+                </div>
+            </div>
+
+<!--             <div class="col-md-4 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2024Modal">
+                <div class="card-body">
+                <h2>2024</h2>
+                <p>Shoe Drive Outreach</p>
+                </div>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+
+        <!-- Year Gallery -->
+    <!-- 2025 -->
+    <div class="modal fade project-gallery" id="food2025Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2025 - Love in Action 2.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/shoe drive/IMG-20250408-WA0005.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/shoe drive/IMG-20250408-WA0006.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/shoe drive/IMG-20250408-WA0007.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/shoe drive/IMG-20250408-WA0007.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/shoe drive/IMG-20250408-WA0008.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/shoe drive/IMG-20250408-WA0009.jpg" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    <!-- 2024 -->
+    <div class="modal fade project-gallery" id="food2024Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2024 - Love in Action 1.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 11.37.13_d948a728.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 11.36.57_a1109156.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 11.41.31_dfe75b91.jpg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.22.23_94b1d1a9.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.22.24_5c316558.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.25.15_ce41d7be.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
 
 <!--       <section>
         

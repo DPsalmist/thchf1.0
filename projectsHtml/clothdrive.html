@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloth Drive</title>
+    <title>Cloth Drive Initiative</title>
 
     
      <!-- Favicon -->
@@ -30,6 +30,25 @@
      <link href="../css/style.css" rel="stylesheet">
 
      <style>
+        .year-card{
+            cursor:pointer;
+            transition:all 0.3s ease;
+            }
+
+        .year-card:hover{
+            transform:translateY(-6px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-gallery img{
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            }
+
+            .project-gallery img:hover{
+                transform: scale(1.05);
+                box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
         .img-card {
           border-radius: 8px;
           overflow: hidden;
@@ -183,7 +202,7 @@
     <!-- back to project -->
     <div class="p-4 m-3 ">
         <a href="../project.html" class="btn btn-outline-dark">
-          <i class="bi bi-arrow-left"></i> Back to Project
+          <i class="bi bi-arrow-left"></i> Back to Project List
         </a>
       </div>
       
@@ -198,7 +217,7 @@
         
              <!-- Text Section -->
                 <div class="col-md-6">
-                  <h1>CLOTH DRIVE</h1>
+                  <h1>Cloth Drive Initiative</h1> <hr>
                   <h4>
                       Clothing Support for Orphans and Vulnerable Children
                   </h4>
@@ -216,44 +235,83 @@
           </div>
     </section>
 
-    <!-- <section class="py-4">
-        <div class="container">
-          <div class="row" id="FoodGrid">
-           
-        </div>
-      </section> -->
+    <!-- Initiatives by Year -->
+    <section class="container my-5">
 
+        <h3 class="text-center mb-4">Cloth Drive Impact by Year</h3>
 
-<!--       <section>
-        
-        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" id="carouselContent"></div>
+        <div class="row g-4 text-center">
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <div class="container py-4">
-          <div class="row">
-            <div class="col-6 col-md-4 col-lg-3">
-              <div class="video-card">
-                <video controls>
-                  <source src="../vids/shoe drive vid/WhatsApp Video 2025-04-08 at 14.20.03_00321c9c.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2026Modal">
+                <div class="card-body">
+                <h2>2026</h2>
+                <p>Community Outreach - Upcoming</p>
+                </div>
+                </div>
             </div>
-          </div>
-        </div>  
-    </section>
- -->
 
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2025Modal">
+                <div class="card-body">
+                <h2>2025</h2>
+                <p>Love in Action 2.0</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+            <!-- Year Gallery -->
+    <!-- 2025 -->
+    <div class="modal fade project-gallery" id="food2025Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2025 - Love in Action 2.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/clothdrive/clo1.1.jpeg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/clothdrive/clo1.2.jpeg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/clothdrive/clo1.3.jpeg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/clothdrive/clo1.4.jpeg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/clothdrive/clo1.5.jpeg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/clothdrive/clothdonation.jpeg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    
      <!-- Footer Start -->
      <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="footer">
       <div class="container py-5">

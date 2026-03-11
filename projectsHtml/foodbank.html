@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Bank</title>
+    <title>Food Bank Initiative</title>
 
      
      <!-- Favicon -->
@@ -29,6 +29,25 @@
      <!-- Template Stylesheet -->
      <link href="../css/style.css" rel="stylesheet">
      <style>
+
+        .year-card{
+            cursor:pointer;
+            transition:all 0.3s ease;
+            }
+
+        .year-card:hover{
+            transform:translateY(-6px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-gallery img{
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            }
+
+        .project-gallery img:hover{
+            transform: scale(1.05);
+            box-shadow:0 10px 25px rgba(0,0,0,0.15);
+        }
 
         .imgSect{
 
@@ -83,63 +102,61 @@
         
 
 
-@media (min-width: 992px) {
-    .donate-details-box {
-        padding: 1rem 3rem 3rem 3rem;
-    }
-    
-    .donate-header-text {
-        font-size: 2rem;
+    @media (min-width: 992px) {
+        .donate-details-box {
+            padding: 1rem 3rem 3rem 3rem;
+        }
+        
+        .donate-header-text {
+            font-size: 2rem;
+        }
+
+        .carousel {
+            max-width: 90%;
+        }
     }
 
-    .carousel {
-        max-width: 90%;
-    }
-}
-
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-    .carousel {
-        max-width: 90%;
-    }
-    
-}
-
-/* For screens smaller than 576px (smaller mobile devices) */
-@media (max-width: 576px) {
-    
-    .responsive-text {
-      font-size: 1rem;
-      /* background-color: green; */
-      padding-right: 30px;
-      /* display: none; */
-    }
-    .responsive-logo{
-      /* background-color: red; */
-      width: 10%;
-      font-size: 8px;
-      justify-content: space-around;
-      margin-right: 100px;
-      padding-right: 20px;
-    }
-    .responsive-logo img{
-      /* background-color: green; */
-      height: 4rem;
-    }
-    .carousel {
-        max-width: 100%;
-        padding: 0 1rem; /* Optional: some horizontal padding */
-    }
-    
-    
-  
+    /* For screens smaller than 768px */
+    @media (max-width: 768px) {
+        .carousel {
+            max-width: 90%;
+        }
+        
     }
 
+    /* For screens smaller than 576px (smaller mobile devices) */
+    @media (max-width: 576px) {
+        
+        .responsive-text {
+          font-size: 1rem;
+          /* background-color: green; */
+          padding-right: 30px;
+          /* display: none; */
+        }
+        .responsive-logo{
+          /* background-color: red; */
+          width: 10%;
+          font-size: 8px;
+          justify-content: space-around;
+          margin-right: 100px;
+          padding-right: 20px;
+        }
+        .responsive-logo img{
+          /* background-color: green; */
+          height: 4rem;
+        }
+        .carousel {
+            max-width: 100%;
+            padding: 0 1rem; /* Optional: some horizontal padding */
+        }
+    
+      
+    }
 
       </style>
 </head>
 <body>
-       <!-- Navbar Start -->
+<!-- Navbar Start -->
 <nav id="nav" class="navbar navbar-expand-lg navbar-dark py-2 px-3 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container-fluid">
         <a href="../index.html" class="navbar-brand d-flex align-items-center justify-content-between g-3 responsive-logo">
@@ -198,119 +215,154 @@
     <!-- back to project -->
     <div class="p-4 m-3">
         <a href="../project.html" class="btn btn-outline-dark">
-          <i class="bi bi-arrow-left"></i> Back to Project
+          <i class="bi bi-arrow-left"></i> Back to Project List
         </a>
-      </div>
+    </div>
       
 
-    <section class="imgSect">
-        <div class="container-fluid px-5">
-            <div class="row align-items-center my-2">
-              <!-- Image Section -->
-              <div class="col-md-6">
-                <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.24.07_0a718e6b.jpg" class="img-fluid" alt="Responsive Image">
-              </div>
-        
-              <!-- Text Section -->
-              <div class="col-md-6">
-                <h1>FOOD BANK</h1>
-                <!-- <h4>
-                    Empowering Entrepreneurs for Success
-                </h4> -->
-                <p>
-                    At Transformation Haven Caring Hearts Foundation, We believe that access to nutritious food is a fundamental right. During our recent outreach project, we successfully distributed essential food supplies to those in need within our community. Our food bank initiative aims to alleviate hunger and provide support to families facing difficult times.
-                </p>
-                <p>
-                    With the help of our dedicated volunteers and generous donors, we were able to ensure that vulnerable individuals and families received the nourishment they deserve.
-                <!-- <p>
-                    Together, we are building a thriving community of successful business leaders.
-                </p> -->
-              </div>
+   <section class="container my-5 text-center">
+
+        <h1>Food Bank Initiative</h1> <hr>
+
+        <p>
+        At Transformation Haven Caring Hearts Foundation (THCHF), we believe that access to nutritious food is a fundamental right. Through our Food Bank initiative, we provide food support to vulnerable individuals and families facing economic hardship.
+
+        With the support of our volunteers and donors, we continue to organize outreach programs that bring nourishment, hope, and dignity to underserved communities.
+        </p>
+
+    </section> <hr>
+
+    <!-- Initiatives by Year -->
+    <section class="container my-5">
+
+        <h3 class="text-center mb-4">Food Bank Impact by Year</h3>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-4 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2026Modal">
+                <div class="card-body">
+                <h2>2026</h2>
+                <p>Community Feeding Outreach - Upcoming</p>
+                </div>
+                </div>
             </div>
-          </div>
-       <!--    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-               <div class="carousel-inner" id="carouselContent"></div>
-      
-               <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Next</span>
-               </button>
-           </div> -->
-    </section>
 
-    <!-- <section class="py-4">
-        <div class="container">
-          <div class="row" id="FoodGrid">
-     
+            <div class="col-md-4 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2025Modal">
+                <div class="card-body">
+                <h2>2025</h2>
+                <p>Love in Action 2.0</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2024Modal">
+                <div class="card-body">
+                <h2>2024</h2>
+                <p>Love in Action 1.0</p>
+                </div>
+                </div>
+            </div>
+
         </div>
-      </section> -->
 
-       <!-- Carousel Section -->
-
-
-    <section >
-        <div class="container-fluid px-5">
-            <div class="row align-items-center my-2">
-              <!-- Image Section -->
-              <div class="col-md-6">
-                <img src="../New Images2 used/Hockey IMGS/IMG-20250421-WA0080.jpg" class="img-fluid" alt="Responsive Image">
-              </div>
-        
-              <!-- Text Section -->
-              <div class="col-md-6">
-                <h1>THCHF Food Bank Outreach</h1>
-                <!-- <h4>
-                    Empowering Entrepreneurs for Success
-                </h4> -->
-                <p>
-                    
-                    Transformation Haven Caring Hearts Foundation (THCHF) recently held a Food Bank outreach to support vulnerable children and adults within our community. This initiative was aimed at providing food to those who are unable to meet their basic nutritional needs.
-                </p>
-                <p>
-                       
-                    By reaching out to the less privileged, we continue to uphold our mission of touching lives and transforming the future one meal at a time.
-
-                <p>
-                    
-                    Together, we’re building a society where no one is left behind.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Carousel Section -->
-<!--           <div id="imageCarousel3" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" id="FoodContent"></div>
-      
-              <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel3" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel3" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div> -->
     </section>
 
+    <!-- Year Gallery -->
+    <!-- 2025 -->
+    <div class="modal fade project-gallery" id="food2025Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2025 - Love in Action 2.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/years/2025food1.0.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/years/2025food1.1.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/years/2025food1.2.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/years/2025food1.3.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/years/2025food1.4.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/years/2025food1.5.jpeg" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
 
 
+    <!-- 2024 -->
+    <div class="modal fade project-gallery" id="food2024Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
 
+        <div class="modal-header">
+        <h4 class="modal-title">2024 - Love in Action 1.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
 
+        <div class="modal-body">
 
+        <div class="row g-3">
 
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 11.37.13_d948a728.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
 
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 11.36.57_a1109156.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
 
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 11.41.31_dfe75b91.jpg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
 
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.22.23_94b1d1a9.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
 
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.22.24_5c316558.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
 
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/feeding/WhatsApp Image 2025-04-09 at 12.25.15_ce41d7be.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
 
+        </div>
 
+        </div>
 
-
+        </div>
+        </div>
+    </div>
 
 
      <!-- Footer Start -->
@@ -368,7 +420,6 @@
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

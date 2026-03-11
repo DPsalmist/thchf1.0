@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Education Initiative</title>
 
      <!-- Favicon -->
      <link href="img/favicon.ico" rel="icon">
@@ -29,7 +29,27 @@
      <link href="../css/style.css" rel="stylesheet">
 
      <style>
-      .img-card {
+
+    .year-card{
+        cursor:pointer;
+        transition:all 0.3s ease;
+        }
+
+    .year-card:hover{
+        transform:translateY(-6px);
+        box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .project-gallery img{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .project-gallery img:hover{
+        transform: scale(1.05);
+        box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .img-card {
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -66,46 +86,44 @@
         }
 
         .video-card video {
-    width: 100%;
-    height: auto;
-    max-width: 100%; /* optional: ensures responsiveness */
-  }
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* optional: ensures responsiveness */
+      }
 
-  .imgSect{
+      .imgSect{
 
-    border-bottom: 2px solid gray;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
+        border-bottom: 2px solid gray;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
 
-  #imageCarousel2{
-    width: 70%;
-  }
+      #imageCarousel2{
+        width: 70%;
+      }
 
-
-
-@media (min-width: 992px) {
-    .donate-details-box {
-        padding: 1rem 3rem 3rem 3rem;
+    @media (min-width: 992px) {
+        .donate-details-box {
+            padding: 1rem 3rem 3rem 3rem;
+        }
+        
+        .donate-header-text {
+            font-size: 2rem;
+      }
+      
+      .carousel {
+          max-width: 90%;
+        }
     }
-    
-    .donate-header-text {
-        font-size: 2rem;
-  }
-  
-  .carousel {
-      max-width: 90%;
-    }
-}
 
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-    .carousel {
-        max-width: 90%;
-  }
-  
-}
+    /* For screens smaller than 768px */
+    @media (max-width: 768px) {
+        .carousel {
+            max-width: 90%;
+      }
+      
+    }
 
    /* For screens smaller than 576px (smaller mobile devices) */
    @media (max-width: 576px) {
@@ -135,10 +153,9 @@
           height: 4rem;
         }
 
-  }
+      }
 
-
-      </style>
+    </style>
 </head>
 <body>
      <!-- Navbar Start -->
@@ -200,7 +217,7 @@
     <!-- back to project -->
     <div class="p-4 m-3">
         <a href="../project.html" class="btn btn-outline-dark">
-          <i class="bi bi-arrow-left"></i> Back to Project
+          <i class="bi bi-arrow-left"></i> Back to Project List
         </a>
       </div>
       
@@ -215,7 +232,7 @@
         
               <!-- Text Section -->
               <div class="col-md-6">
-                <h1>EDUCATION</h1>
+                <h1>Education Initiative</h1> <hr>
                 <h4>
                     Our Recent Outreach for Orphans and Vulnerable Children
                 </h4>
@@ -238,7 +255,7 @@
               </div>
             </div>
           </div>
-    </section>
+    </section> <hr>
 
     <!-- <section class="py-4">
         <div class="container">
@@ -279,6 +296,45 @@
     </section>
  -->
 
+    <!-- Initiatives by Year -->
+    <section class="container my-5">
+
+        <h3 class="text-center mb-4">Education Impact by Year</h3>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-6 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2026Modal">
+                <div class="card-body">
+                <h2>2026</h2>
+                <p>Education Outreach - Upcoming</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2025Modal">
+                <div class="card-body">
+                <h2>2025</h2>
+                <p>Love in Action 2.0</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-6">
+                <div class="card shadow-sm year-card" data-bs-toggle="modal" data-bs-target="#food2024Modal">
+                <div class="card-body">
+                <h2>2024</h2>
+                <p>Love in Action 1.0</p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
     <section >
         <div class="container-fluid px-5">
             <div class="row align-items-center my-2">
@@ -313,7 +369,9 @@
           </div>
     </section>
 
-    <!--  <section class="FiestaImage">
+    
+<!-- 
+     <section class="FiestaImage">
         <div id="imageCarousel2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" id="fiestaCarouselContent"></div>
 
@@ -339,9 +397,90 @@
             </div>
           </div>
         </div>
-      </div>   -->
+      </div>    -->
 
 
+        <!-- Year Gallery -->
+    <!-- 2025 -->
+    <div class="modal fade project-gallery" id="food2025Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2025 - Love in Action 2.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Hockey IMGS/IMG-20250422-WA0035.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/Hockey IMGS/IMG-20250422-WA0036.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/edu1.0.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/edu1.1.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/edu1.2.jpeg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/edu1.4.jpeg" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    <!-- 2024 -->
+    <div class="modal fade project-gallery" id="food2024Modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+        <div class="modal-header">
+        <h4 class="modal-title">2024 - Love in Action 1.0</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+
+        <div class="row g-3">
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/stationery.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/2024edu1.1.jpg" style="height:240px;" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4 col-6">
+            <img src="../New Images2 used/education image/WhatsApp Image 2025-04-09 at 13.00.38_f65ce01e.jpg" style="height:240px; width: 100%;" class="img-fluid rounded">
+            </div>
+
+        </div>
+
+        </div>
+
+        </div>
+        </div>
+    </div>
 
 
 
